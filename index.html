@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>my prayer</title>
+</head>
+<body>
+    <img class="error400" src="public/400error.jpg">
+    <div class="informationcityorcountry">
+        <div class="informationcountry">
+            <label for="getcountry">الدولة :</label>
+            <input type="text" placeholder="ادخل اسم الدولة" id="getcountry" class="form-control" value="">
+        </div>
+        <div class="informationcity">
+            <label for="getcity">المدينة : </label>
+            <input type="text" placeholder="ادخل اسم المدينة" id="getcity" class="form-control" value="">
+        </div>
+        <button id="btngetprayer" class="btn btn-primary">عرض مواقيت الصلاة</button>
+    </div>
+    <div class="prayertimesbycity">
+        <p>مواقيت الصلاة حسب مدينة <span id="cityshow"></span></p>
+    </div>
+    <div class="prayerbackground">
+        <div class="dateprayer">
+            <div class="topdate">
+                <p class="date"></p>
+                <p class="day"></p>
+                <p class="clock"></p>
+            </div>
+            <div class="bottomdate">
+                <div class="prayeritem" dir="rtl">
+                    <p class="name">الفجر</p>
+                    <p class="clock"></p>
+                    <p class=" name name_en">fagr</p>
+                </div>
+                <div class="prayeritem" dir="rtl">
+                    <p class="name">الشروق</p>
+                    <p class="clock"></p>
+                    <p class=" name name_en">shraq</p>
+                </div>
+                <div class="prayeritem" dir="rtl">
+                    <p class="name">الظهر</p>
+                    <p class="clock"></p>
+                    <p class=" name name_en">dhahr</p>
+                </div>
+                <div class="prayeritem" dir="rtl">
+                    <p class="name">العصر</p>
+                    <p class="clock"></p>
+                    <p class=" name name_en">asr</p>
+                </div>
+                <div class="prayeritem" dir="rtl">
+                    <p class="name">المغرب</p>
+                    <p class="clock"></p>
+                    <p class=" name name_en">maghrb</p>
+                </div>
+                <div class="prayeritem" dir="rtl">
+                    <p class="name">العشاء</p>
+                    <p class="clock"></p>
+                    <p class=" name name_en">isha</p>
+                </div>
+            </div>
+        </div>
+        <img src="public/prayer.png">
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(26, 88, 88);
+    overflow: hidden;
+    height: 100%;
+}
+.error400{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2000;
+    left: 0;
+    right:0;
+    bottom: 0;
+    top: 0;
+    display: none;
+}
+.prayertimesbycity{
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    height: 25px;
+}
+.informationcityorcountry{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 25px 0;
+    direction: rtl;
+}
+.informationcityorcountry .informationcity,.informationcityorcountry .informationcountry{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.informationcityorcountry label{
+    width: 130px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+.informationcityorcountry input[type="text"]{
+    width: 350px;
+    height: 30px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+/*---------------------------------------------------------------------*/
+.prayerbackground{
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -20px;
+    height: 580px;
+    z-index: 0;
+}
+.prayerbackground img{
+    width: 630px;
+    height: 100%;
+    margin: 0 355px;
+}
+.prayerbackground .topdate,.prayerbackground .bottomdate{
+    position: absolute;
+    z-index: 1;
+    left: 455px;
+    right: 455px;
+    top: 60px;
+    height: 146px;
+}
+.prayerbackground .bottomdate{
+    top: 206px;
+    height: 320px;
+    padding: 10px 20px;
+}
+.prayerbackground .topdate .date,.prayerbackground .topdate .clock,.prayerbackground .topdate .day,.prayerbackground .bottomdate .prayeritem .clock{
+    background-color: black;
+    color: red;
+    text-align: center;
+    height: 40px;
+    font-size:25px;
+    text-shadow: 5px 5px 10px red;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.prayerbackground .topdate .date{
+    width: 230px;
+}
+.prayerbackground .topdate .day{
+    width: 170px;
+}
+.prayerbackground .topdate .clock{
+    width: 210px;
+}
+.prayerbackground .bottomdate .prayeritem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.prayerbackground .bottomdate .prayeritem .clock{
+    height: 35px;
+    font-size: 25px;
+    width: 130px;
+    direction: ltr;
+}
+.prayerbackground .bottomdate .prayeritem .name{
+    font-size: 20px;
+    font-weight: bolder;
+    width: 100px;
+}
+.prayerbackground .bottomdate .prayeritem .name_en{
+    text-align: left;
+}
+/*---------------------------------------------------------------------------*/
+@media screen and (max-width:430px){
+    body{
+        overflow: auto;
+    }
+    .informationcityorcountry{
+        flex-direction: column;
+    }
+    .informationcityorcountry label{
+        text-align: start;
+    }
+    .informationcityorcountry input[type="text"]{
+        width: 180px;
+        font-size: 15px;
+    }
+    /*-----------------------------------------------*/
+    .prayerbackground img{
+        width: 380px;
+        height: 660px;
+        margin-left: 0px;
+        margin-right: 0px;
+        z-index: 0;
+    }
+    .prayerbackground .topdate,.prayerbackground .bottomdate{
+        position: absolute;
+        z-index: 1;
+        left: 10px;
+        right: 10px;
+        top: 140px;
+        height: 190px;
+        zoom: 65%;
+        width: 100%;
+    }
+    .prayerbackground .bottomdate{
+        top: 460px;
+        height: 320px;
+        padding: 0 50px;
+    }
+}
+@media screen and (max-width:320px) {
+    .prayerbackground img{
+        width: 330px;
+        height: 660px;
+        margin-left: -10px;
+        margin-right: -10px;
+        z-index: 0;
+    }
+    .prayerbackground .topdate,.prayerbackground .bottomdate{
+        position: absolute;
+        z-index: 1;
+        left: 5px;
+        right: 5px;
+        top: 140px;
+        height: 190px;
+        zoom: 65%;
+        width: 100%;
+    }
+    .prayerbackground .bottomdate{
+        top: 460px;
+        height: 320px;
+        padding: 0 20px;
+    }
+    .prayerbackground .bottomdate .prayeritem{
+        width: 420px;
+    }
+}
+@media screen and (min-width:425px) and (max-width:768px) {
+    body{
+        overflow: auto;
+    }
+    .informationcityorcountry{
+        flex-direction: column;
+        width: 1100px;
+    }
+    .informationcityorcountry label{
+        text-align: start;
+    }
+    .informationcityorcountry input[type="text"]{
+        width: 350px;
+        font-size: 15px;
+    }
+    /*-----------------------------------------------*/
+    .prayerbackground img{
+        margin: 0 250px;
+        height: 630px;
+    }
+    .prayerbackground .topdate,.prayerbackground .bottomdate{
+        left: 300px;
+        right: -80px;
+    }
+}
+
+
+
+
